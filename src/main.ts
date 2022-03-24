@@ -10,7 +10,7 @@ const app = createApp(App)
 //el-icon-xxx
 for (let i in Icons) {
   //注册全部组件
-  app.component(`el-icon${toLine(i)}`, (Icons as any)[i])
+  app.component(`el-icon-${toLine(i)}`, (Icons as any)[i])
 }
 app.use(router).use(ElementPlus)
 app.mount('#app')
